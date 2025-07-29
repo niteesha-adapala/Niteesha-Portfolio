@@ -85,4 +85,10 @@
   .timeline-item::after {
     left: 15px;
   }
+
+  header, nav, .navbar, .navbar-fixed-top, .navbar-static-top {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
 }
