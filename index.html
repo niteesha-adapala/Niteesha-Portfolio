@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -33,7 +34,7 @@
       text-decoration: underline;
     }
     .profile-pic {
-      width: 180px;
+      width: 150px;
       height: auto;
       object-fit: cover;
       border: 2px solid #001f3f;
@@ -48,13 +49,23 @@
     }
     .about-text {
       flex: 1 1 60%;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      padding: 10px;
     }
     .about-image {
-      flex: 1 1 30%;
+      flex: 1 1 35%;
       text-align: center;
     }
-    header {
-      display: none;
+    header, .navbar-fixed-top, .navbar-static-top {
+      display: none !important;
+    }
+    ul.side-nav li span {
+      font-size: 1.1rem;
+      padding-left: 10px;
+    }
+    ul.side-nav li {
+      padding: 10px 0;
     }
   </style>
 
@@ -65,9 +76,7 @@
   <!-- Navigation -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
-      <li class="logo center-align" style="padding: 40px 0;">
-        <a id="logo-container" href="#intro"></a>
-      </li>
+      <li class="logo center-align" style="padding: 40px 0;"><a id="logo-container" href="#intro"></a></li>
       <li class="bold"><a href="#about" class="waves-effect waves-dark navy-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
       <li class="bold"><a href="#experience" class="waves-effect waves-dark navy-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
       <li class="bold"><a href="#projects" class="waves-effect waves-dark navy-text"><i class="mdi-av-my-library-books small"></i><span>Projects</span></a></li>
@@ -101,14 +110,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-9">
-            <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-              <div class="about-image">
-          <img src="assets/img/img/g.JPG" class="profile-pic" alt="avatar" onerror="this.style.display='none'">
+            <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px; text-align: center;">
               <div class="caption">
+                <img src="assets/img/img/g.JPG" class="profile-pic" alt="avatar" onerror="this.style.display='none'">
                 <h2>Hi, I'm <span class="navy-background">Niteesha Adapala.</span></h2>
                 <h5 class="black-text">A driven and detail-oriented Computational Biologist with a passion for uncovering biological insights through data-driven approaches and computational modeling.</h5>
               </div>
-        </div>
               <div class="social">
                 <a href="https://www.linkedin.com/in/niteesha-adapala/" target="_blank">
                   <button class="icon-btn linkedin btn-floating">
@@ -141,9 +148,12 @@
           <p>I enjoy building efficient, scalable pipelines and exploring the intersection of biology and data science. Whether it’s working with tools like Rosetta, GROMACS, and TensorFlow, or diving into a new dataset, I’m always curious and eager to learn.</p>
           <p>When I’m not coding or modeling proteins, you’ll probably find me experimenting with a new recipe or watching sci-fi shows. I’m always open to exciting collaborations, so feel free to browse my work.</p>
         </div>
-       
+        <div class="about-image">
+          <img src="assets/img/img/g.JPG" class="profile-pic" alt="avatar" onerror="this.style.display='none'">
+        </div>
       </div>
     </section>
+ 
 
   
     <!-- Experience Section -->
