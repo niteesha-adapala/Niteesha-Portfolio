@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RNA-Seq Analysis | Niteesha Adapala</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #001f3f;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>NGS-Based RNA-Seq Analysis</h1>
+
+  <div class="section">
+    <h2>Project Overview</h2>
+    <p>
+      This project investigates differential gene expression across human liver and skin tissues using an NGS-based RNA-Seq workflow.
+      Leveraging transcriptomic data from the Human Protein Atlas, the study aims to uncover tissue-specific gene signatures and biological pathways,
+      particularly those linked to liver-related skin manifestations. The approach integrates computational bioinformatics techniques to analyze
+      high-throughput sequencing data and interpret the molecular basis of tissue-specific health outcomes.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Data Source:</strong> RNA-seq datasets from human liver and skin tissues (Uppsala University Hospital via Human Protein Atlas).</li>
+      <li><strong>Technology Platform:</strong> Next-Generation Sequencing (NGS).</li>
+      <li><strong>Analysis Focus:</strong>
+        <ul>
+          <li>Identification of Differentially Expressed Genes (DEGs).</li>
+          <li>Comparison of metabolic and structural gene expression profiles between tissues.</li>
+          <li>Discovery of gene interactions and biological functions using enrichment and network analyses.</li>
+        </ul>
+      </li>
+      <li><strong>Applications:</strong>
+        <ul>
+          <li>Insights into cutaneous indicators of liver disease (e.g., jaundice, keratin gene shifts).</li>
+          <li>Informing biomarker development and disease diagnostics.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Pipeline Workflow</h2>
+
+    <h3>1. Data Preprocessing</h3>
+    <ul>
+      <li><strong>Quality Control:</strong> FastQC v0.11.9 used to assess sequencing quality.</li>
+      <li><strong>Trimming:</strong> Trim Galore removed adapters and low-quality sequences.</li>
+    </ul>
+
+    <h3>2. Alignment & Quantification</h3>
+    <ul>
+      <li><strong>Mapping:</strong> HISAT2 aligned reads to the human reference genome.</li>
+      <li><strong>SAM/BAM Handling:</strong> SAMtools used for post-alignment processing.</li>
+      <li><strong>Visualization:</strong> IGV (Integrative Genomics Viewer) enabled mapping inspection.</li>
+    </ul>
+
+    <h3>3. Differential Expression Analysis (in RStudio v4.3.1)</h3>
+    <ul>
+      <li><strong>Tools Used:</strong> DESeq2, edgeR, Genefilter, Pheatmap, RColorBrewer</li>
+      <li><strong>Outputs:</strong>
+        <ul>
+          <li>PCA and MDS plots to separate tissue clusters.</li>
+          <li>Smear plots and heatmaps for DEGs.</li>
+          <li>Statistical identification of up/downregulated genes.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>4. Functional Interpretation</h3>
+    <ul>
+      <li><strong>Enrichment Analysis:</strong> DAVID identified Gene Ontology (GO) terms and KEGG pathways.</li>
+      <li><strong>Interaction Network:</strong> STRING database revealed gene–gene interactions and pathway clusters.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Conclusion</h2>
+    <p>
+      The study successfully demonstrates a complete NGS-RNA-Seq workflow for transcriptomic comparison between liver and skin tissues. Key findings highlight:
+    </p>
+    <ul>
+      <li>The role of early liver-specific gene expression (e.g., CYP, UGT, ALDH families).</li>
+      <li>Skin-tissue-specific upregulation of keratin-related genes (KRT1–KRT14).</li>
+      <li>Biological connections between liver dysfunction and skin symptoms through gene-level evidence.</li>
+    </ul>
+    <p>
+      By integrating high-throughput sequencing and bioinformatics, the project advances our understanding of tissue-specific disease biology and supports
+      precision diagnostics and targeted interventions in clinical genomics.
+    </p>
+  </div>
+</body>
+</html>
