@@ -33,11 +33,13 @@
       text-decoration: underline;
     }
     .profile-pic {
-      width: 100px;
-      height: 100px;
+      width: 140px;
+      height: 140px;
       object-fit: cover;
       border-radius: 50%;
       border: 2px solid #001f3f;
+      display: block;
+      margin: 0 auto 20px;
     }
   </style>
 
@@ -50,8 +52,7 @@
     <ul class="side-nav fixed section table-of-contents">
       <li class="logo center-align" style="padding: 40px 0;">
         <a id="logo-container" href="#intro">
-          <img src="assets/img/img/g.JPG" class="profile-pic" alt="avatar" onerror="this.style.display='none'">
-          <!--div class="navy-text" style="margin-top: 10px; font-weight: bold;">Niteesha</div-->
+          <!-- Removed image from here -->
         </a>
       </li>
       <li class="bold"><a href="#about" class="waves-effect waves-dark navy-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
@@ -116,16 +117,16 @@
 
     <!-- About Section -->
     <section id="about" class="section scrollspy">
-      <img src="assets/img/img/g.JPG" class="profile-pic" alt="avatar" onerror="this.style.display='none'">
       <h3 class="page-title white-text navy-background">About</h3>
       <div class="container flow-text">
+        <img src="assets/img/img/g.JPG" class="profile-pic" alt="avatar" onerror="this.style.display='none'">
         <p><strong>Turning Data into Discoveries!</strong></p>
         <p>Hi, I’m Niteesha Adapala. I have a Master’s in Bioinformatics Data Science from the University of Delaware, where I discovered my love for solving biological problems with code. With a background in computational biology and experience in both academia and industry, I’ve worked on everything from protein modeling and antigen prediction to RNA-seq analysis and machine learning for disease risk.</p>
         <p>I enjoy building efficient, scalable pipelines and exploring the intersection of biology and data science. Whether it’s working with tools like Rosetta, GROMACS, and TensorFlow, or diving into a new dataset, I’m always curious and eager to learn.</p>
         <p>When I’m not coding or modeling proteins, you’ll probably find me experimenting with a new recipe or watching sci-fi shows. I’m always open to exciting collaborations, so feel free to browse my work.</p>
       </div>
     </section>
-
+  
     <!-- Experience Section -->
     <!--section id="experience" class="section scrollspy">
       <h3 class="page-title white-text navy">Experience</h3>
