@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NDD Risk Prediction | Niteesha Adapala</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #001f3f;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Predicting Neurodevelopmental Disability (NDD) Risk in Children</h1>
+
+  <div class="section">
+    <h2>Project Overview</h2>
+    <p>
+      This project applies machine learning to investigate how a combination of individual traits, clinical history, and family environment
+      influences the likelihood of children developing Neurodevelopmental Disabilities (NDD). Using a rich national dataset from the NSCH
+      (National Survey of Children's Health), the study builds a predictive model to highlight key risk factors and guide actionable interventions.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Key Features: What Powers This Analysis</h2>
+    <ul>
+      <li><strong>Dataset:</strong> NSCH survey data representing 50,000+ children across the U.S.</li>
+      <li><strong>Goal:</strong> Predict NDD risk levels (High vs Low) using supervised learning</li>
+      <li><strong>Features Analyzed:</strong>
+        <ul>
+          <li><strong>Individual:</strong> Age, gender, BMI, sleep, physical activity, screen time</li>
+          <li><strong>Clinical:</strong> Autism, ADHD, diabetes diagnoses</li>
+          <li><strong>Environmental:</strong> Neighborhood safety, food security, special education plans, language spoken at home</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Workflow</h2>
+
+    <h3>1. Data Preprocessing</h3>
+    <ul>
+      <li>Imputed missing values using mean strategy for numeric features</li>
+      <li>Encoded categorical variables as factors</li>
+    </ul>
+
+    <h3>2. Modeling & Evaluation</h3>
+    <ul>
+      <li>Trained a Random Forest classifier to model NDD risk</li>
+      <li>Evaluated using confusion matrix, accuracy, and ROC-AUC</li>
+      <li>Applied chi-square tests, correlation analysis, and box plots to extract insight</li>
+    </ul>
+
+    <h3>Top Predictors</h3>
+    <ul>
+      <li>Age at autism diagnosis (strongest signal)</li>
+      <li>Child’s current age</li>
+      <li>Neighborhood safety perception</li>
+      <li>Special education support status</li>
+    </ul>
+
+    <h3>Performance</h3>
+    <ul>
+      <li><strong>Accuracy:</strong> 95%</li>
+      <li><strong>AUC:</strong> 1.0, excellent separation but may signal overfitting</li>
+    </ul>
+
+    <h3>Group Insights: Profiles Behind the Prediction</h3>
+    <ul>
+      <li><strong>High-Risk Group:</strong> Skews older, more clinical diagnoses, lower socioeconomic status</li>
+      <li><strong>Low-Risk Group:</strong> Broader age spread, better family support and neighborhood conditions</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Conclusion: Insight for Intervention</h2>
+    <p>
+      This project delivers a data-driven, multidimensional view of child health, showing that early diagnoses, safe environments,
+      and targeted support plans play a pivotal role in reducing NDD risk. The findings advocate for integrated, cross-sector efforts
+      to improve outcomes for children—combining healthcare, education, and public policy in meaningful ways.
+    </p>
+    <p><em>For further details, explore the project’s GitHub Repository.</em></p>
+  </div>
+</body>
+</html>
