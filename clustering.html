@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsupervised Clustering of GTEx Tissue Profiles | Niteesha Adapala</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #001f3f;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Unsupervised Clustering of Human Tissue Transcriptomes</h1>
+
+  <div class="section">
+    <h2>Project Overview</h2>
+    <p>
+      This project applies unsupervised machine learning to high-dimensional gene expression data to uncover natural groupings among human tissue samples.
+      Using transcriptomic data from the GTEx project, the goal was to cluster tissues based solely on their RNA profiles—without any prior labels,
+      to evaluate whether underlying biological identities emerge through data alone. The outcome demonstrates how machine learning can powerfully differentiate
+      tissue types, identify overlaps in gene regulation, and pave the way for data-driven discoveries in functional genomics.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Dataset:</strong> Bulk RNA-Seq (TPM normalized) from ~19,000 GTEx samples and over 59,000 genes.</li>
+      <li><strong>Gene Filtering:</strong> Removed low/no-expression genes, keeping ~20,500 for analysis.</li>
+      <li><strong>PCA Reduction:</strong> Reduced data to 50 components while preserving ~80% of variance.</li>
+      <li><strong>Unsupervised Algorithms:</strong>
+        <ul>
+          <li><strong>K-Means:</strong> Formed clear, distinct tissue clusters.</li>
+          <li><strong>GMM:</strong> Captured overlap and soft boundaries.</li>
+          <li><strong>DBSCAN:</strong> Detected dense, reliable core clusters and filtered noise.</li>
+        </ul>
+      </li>
+      <li><strong>Evaluation Metrics:</strong> Silhouette Score, Elbow Method, Davies-Bouldin Index,<br/>
+        Adjusted Rand Index (0.19) and Normalized Mutual Information (0.57) validated biological alignment.</li>
+      <li><strong>Cluster Insights:</strong> High purity for tissues like testis, muscle, thyroid;<br/>overlap in related tissues such as arteries and adipose tissues.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Pipeline Workflow</h2>
+
+    <h3>1. Preprocessing</h3>
+    <ul>
+      <li>Filtered genes with low average expression (TPM &lt; 1).</li>
+      <li>Ensured a clean, imputation-free dataset.</li>
+    </ul>
+
+    <h3>2. Dimensionality Reduction</h3>
+    <ul>
+      <li>Applied PCA to compress high-dimensional gene data into principal components.</li>
+    </ul>
+
+    <h3>3. Clustering</h3>
+    <ul>
+      <li>Ran K-Means, Gaussian Mixture Models, and DBSCAN.</li>
+      <li>Tuned hyperparameters using silhouette and elbow methods.</li>
+    </ul>
+
+    <h3>4. Validation & Visualization</h3>
+    <ul>
+      <li>Compared cluster labels with known tissue types using confusion matrices.</li>
+      <li>Used UMAP and t-SNE to visually confirm cluster separation and overlap.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Conclusion</h2>
+    <p>
+      This project showcases the power of unsupervised machine learning to discover biologically meaningful structures in complex genomic data.
+      Even without labels, the clustering revealed clear patterns consistent with known tissue identities, highlighting the discriminatory power
+      of transcriptomic profiles. The results emphasize how expression-based clustering can inform future applications in tissue classification,
+      disease subtype discovery, and biomarker development, all through a data-first, hypothesis-free approach.
+    </p>
+    <p>For further details, explore the project’s <a href="https://github.com/niteesha-adapala" target="_blank">GitHub Repository</a>.</p>
+  </div>
+</body>
+</html>
