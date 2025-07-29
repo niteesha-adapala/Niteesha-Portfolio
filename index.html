@@ -8,13 +8,14 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
   <style>
     body {
       background-color: white;
       color: #111;
     }
     .navy-text {
-      color: white !important;
+      color: #001f3f !important;
     }
     .navy-background {
       background-color: #001f3f !important;
@@ -31,165 +32,82 @@
       color: #001f3f;
       text-decoration: underline;
     }
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #001f3f;
+    }
   </style>
 
   <title>Niteesha Adapala | Computational Biologist</title>
 </head>
 
 <body>
- <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
+  <!-- Navigation -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
-
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
+      <li class="logo center-align" style="padding: 20px 0;">
+        <a id="logo-container" href="#intro">
+          <img src="/assets/img/passport-new.jpg" class="profile-pic" alt="avatar" onerror="this.style.display='none'">
+          <div class="navy-text" style="margin-top: 10px; font-weight: bold;">Niteesha</div>
         </a>
       </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark navy-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark navy-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark navy-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark navy-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark navy-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark navy-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark navy-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <!--a aria-label="Open Varad's resume in a new tab" href="https://varadbhogayata.github.io/assets/resume/Varad_Bhogayata_Resume.pdf" target="_blank"
-        class="waves-effect waves-dark navy-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a-->  
-      </li>
+      <li class="bold"><a href="#about" class="waves-effect waves-dark navy-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
+      <li class="bold"><a href="#experience" class="waves-effect waves-dark navy-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
+      <li class="bold"><a href="#projects" class="waves-effect waves-dark navy-text"><i class="mdi-av-my-library-books small"></i><span>Projects</span></a></li>
+      <li class="bold"><a href="#skills" class="waves-effect waves-dark navy-text"><i class="mdi-action-assessment small"></i><span>Skills</span></a></li>
+      <li class="bold"><a href="#education" class="waves-effect waves-dark navy-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
+      <li class="bold"><a href="#contact" class="waves-effect waves-dark navy-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
     </ul>
   </nav>
 
-  <!-- Nav class 2 -->
+  <!-- Mobile Nav -->
   <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="navy-text">Niteesha
-        Adapala</a><!--span class="black-text">Software Developer</span-->
+      <a id="name" href="#" class="navy-text">Niteesha Adapala</a>
     </div>
   </nav>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark navy-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark navy-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark navy-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark navy-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
+  <ul id="slide-out" class="side-nav">
+    <li class="bold"><a href="#about" class="waves-effect waves-dark navy-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
+    <li class="bold"><a href="#experience" class="waves-effect waves-dark navy-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
+    <li class="bold"><a href="#projects" class="waves-effect waves-dark navy-text"><i class="mdi-av-my-library-books small"></i><span>Projects</span></a></li>
+    <li class="bold"><a href="#skills" class="waves-effect waves-dark navy-text"><i class="mdi-action-assessment small"></i><span>Skills</span></a></li>
+    <li class="bold"><a href="#education" class="waves-effect waves-dark navy-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
+    <li class="bold"><a href="#contact" class="waves-effect waves-dark navy-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
+  </ul>
 
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark navy-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark navy-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <!--li class="bold">
-        <a aria-label="Open Varad's Resume in a new tab"
-          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark navy-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-    </li-->
-    </ul>
-
-  <!-- Main Content-->
+  <!-- Main Content -->
   <main>
     <!-- Intro Section -->
     <section id="intro" class="section scrollspy full-height">
       <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="navy-text" style="background-color: #001f3f; color: white; padding: 0 10px;">Niteesha Adapala.</span></h2>
-              <h5>A driven and detail-oriented Computational Biologist with a passion for uncovering biological insights through data-driven approaches and computational modeling.</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/niteesha-adapala/" target="_blank">
-                <button class="icon-btn linkedin btn-floating">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/niteesha-adapala" target="_blank">
-                <button class="icon-btn github btn-floating">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="btn">Read More</a>
-              <a href="#contact" class="btn">Contact Me</a>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+              <div class="caption">
+                <h2>Hi, I'm <span class="navy-background">Niteesha Adapala.</span></h2>
+                <h5 class="black-text">A driven and detail-oriented Computational Biologist with a passion for uncovering biological insights through data-driven approaches and computational modeling.</h5>
+              </div>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/niteesha-adapala/" target="_blank">
+                  <button class="icon-btn linkedin btn-floating">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/niteesha-adapala" target="_blank">
+                  <button class="icon-btn github btn-floating">
+                    <i class="fa fa-github"></i>
+                  </button>
+                </a>
+              </div>
+              <div class='buttons'>
+                <a href="#about" class="btn">Read More</a>
+                <a href="#contact" class="btn">Contact Me</a>
+              </div>
             </div>
           </div>
         </div>
@@ -201,15 +119,9 @@
       <h3 class="page-title white-text navy-background">About</h3>
       <div class="container flow-text">
         <p><strong>Turning Data into Discoveries!</strong></p>
-        <p>
-          Hi, I’m Niteesha Adapala. I have a Master’s in Bioinformatics Data Science from the University of Delaware, where I discovered my love for solving biological problems with code. With a background in computational biology and experience in both academia and industry, I’ve worked on everything from protein modeling and antigen prediction to RNA-seq analysis and machine learning for disease risk.
-        </p>
-        <p>
-          I enjoy building efficient, scalable pipelines and exploring the intersection of biology and data science. Whether it’s working with tools like Rosetta, GROMACS, and TensorFlow, or diving into a new dataset, I’m always curious and eager to learn.
-        </p>
-        <p>
-          When I’m not coding or modeling proteins, you’ll probably find me experimenting with a new recipe or watching sci-fi shows. I’m always open to exciting collaborations, so feel free to browse my work.
-        </p>
+        <p>Hi, I’m Niteesha Adapala. I have a Master’s in Bioinformatics Data Science from the University of Delaware, where I discovered my love for solving biological problems with code. With a background in computational biology and experience in both academia and industry, I’ve worked on everything from protein modeling and antigen prediction to RNA-seq analysis and machine learning for disease risk.</p>
+        <p>I enjoy building efficient, scalable pipelines and exploring the intersection of biology and data science. Whether it’s working with tools like Rosetta, GROMACS, and TensorFlow, or diving into a new dataset, I’m always curious and eager to learn.</p>
+        <p>When I’m not coding or modeling proteins, you’ll probably find me experimenting with a new recipe or watching sci-fi shows. I’m always open to exciting collaborations, so feel free to browse my work.</p>
       </div>
     </section>
 
