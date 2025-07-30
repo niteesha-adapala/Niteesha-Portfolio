@@ -691,6 +691,20 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+  #projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* spacing between cards */
+}
+#projects .card {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 }
   header, nav, .navbar, .navbar-fixed-top, .navbar-static-top {
   background-color: transparent !important;
